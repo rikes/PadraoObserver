@@ -4,16 +4,12 @@
  * and open the template in the editor.
  */
 
-package br.edu.ifes.control;
+package br.edu.ifes.model;
 
 /**
  *
  * @author Henrique
  */
-//Classe responsanvel pelo controle de dados, faz as devidas alterações
-//Eh o Subject
-public class AtualizaDados {
-    
-    
-    
+public interface Observer {
+    public void update();
 }
