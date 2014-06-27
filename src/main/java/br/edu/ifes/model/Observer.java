@@ -6,10 +6,12 @@
 
 package br.edu.ifes.model;
 
+import br.edu.ifes.control.AtualizaDados;
+
 /**
  *
  * @author Henrique
  */
 public interface Observer {
-    public void update();
+    public void update(AtualizaDados dados);
 }

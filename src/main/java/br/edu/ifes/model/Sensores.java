@@ -12,13 +12,18 @@ import br.edu.ifes.control.AtualizaDados;
  *
  * @author Henrique
  */
+//Classe que 
 public class Sensores extends AtualizaDados{
-    double mediaSensor;
+    private double mediaSensor;
     
+    public Sensores(){
+        mediaSensor = 0;
+    }    
     public void setSensores(int s1, int s2, int s3){
         this.mediaSensor = (s1 + s2 + s3)/3;
+        notifyObserversInteressados(this.mediaSensor);
     }
     public double getSensores(){
-        return mediaSensor;
+        return this.mediaSensor;
     }
 }

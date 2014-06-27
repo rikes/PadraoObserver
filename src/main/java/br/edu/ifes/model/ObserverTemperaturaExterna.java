@@ -6,15 +6,19 @@
 
 package br.edu.ifes.model;
 
+import br.edu.ifes.control.AtualizaDados;
+
 /**
  *
  * @author Henrique
  */
 public class ObserverTemperaturaExterna implements Observer{
-
+    
     @Override
-    public void update() {
-        
+    
+    public void update(AtualizaDados dados) {
+        Sensores sensores = new Sensores();
+        double sensorExterno = sensores.getSensores();
+        System.out.println("Temperatura Externa "+sensorExterno +"º");
     }
-   
 }

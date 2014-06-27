@@ -6,6 +6,11 @@
 
 package br.edu.ifes.app;
 
+import br.edu.ifes.control.AtualizaDados;
+import br.edu.ifes.model.ObserverTemperaturaSala;
+import br.edu.ifes.model.Sensores;
+import java.util.Random;
+
 /**
  *
  * @author Henrique
@@ -13,6 +18,27 @@ package br.edu.ifes.app;
 public class App {
 
     public static void main(String[] args) {
+        Random gerador = new Random();
+        Sensores sensores = new Sensores();
+        ObserverTemperaturaSala tempSala = new ObserverTemperaturaSala();  
+        
+        int s1 = gerador.nextInt(50);
+        int s2 = gerador.nextInt(50);
+        int s3 = gerador.nextInt(50);       
+        
+        sensores.addObserverInteressado(tempSala);
+        sensores.setSensores(s1, s2, s3);
+        
+        
+        
+        
+        
+        System.out.println(sensores.getSensores());
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+ 
+        
         
     }
     
