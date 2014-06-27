@@ -7,7 +7,7 @@
 package br.edu.ifes.app;
 
 import br.edu.ifes.control.AtualizaDados;
-import br.edu.ifes.model.ObserverTemperaturaSala;
+import br.edu.ifes.view.ObserverTemperaturaSala;
 import br.edu.ifes.model.Sensores;
 import java.util.Random;
 

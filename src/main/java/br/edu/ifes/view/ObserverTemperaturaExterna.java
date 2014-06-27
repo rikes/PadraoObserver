@@ -4,9 +4,11 @@
  * and open the template in the editor.
  */
 
-package br.edu.ifes.model;
+package br.edu.ifes.view;
 
 import br.edu.ifes.control.AtualizaDados;
+import br.edu.ifes.model.Observer;
+import br.edu.ifes.model.Sensores;
 
 /**
  *

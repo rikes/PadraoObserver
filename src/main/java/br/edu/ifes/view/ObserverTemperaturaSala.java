@@ -4,9 +4,10 @@
  * and open the template in the editor.
  */
 
-package br.edu.ifes.model;
+package br.edu.ifes.view;
 
 import br.edu.ifes.control.AtualizaDados;
+import br.edu.ifes.model.Observer;
 
 /**
  *
@@ -20,9 +21,8 @@ public class ObserverTemperaturaSala implements Observer{
         double sensorExterno = dados.getTemperatura();
         if(sensorExterno < TEMPERATURA_MAXIMA){
             System.out.println("Temperatura Abaixo dos 25º ");
-            System.out.println(sensorExterno);
         }else if(sensorExterno > TEMPERATURA_MAXIMA){
-            System.out.println("Temperatura ACima dos 25º ");
+            System.out.println("Temperatura Acima dos 25º ");
         }else if(sensorExterno == TEMPERATURA_MAXIMA){
             System.out.println("Temperatura Ideal");
         }
